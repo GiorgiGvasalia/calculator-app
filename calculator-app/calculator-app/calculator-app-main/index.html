@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=League+Spartan&family=Manrope&family=MedievalSharp&family=Mukta:wght@600&family=Poppins:ital@0;1&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+
+    <title>Calculator app</title>
+  </head>
+  <body>
+    <div class="calculator-app">
+      <header class="header">
+        <label class="calc">calc</label>
+        <div class="themes">
+          <label class="theme-label">THEME</label>
+          <div class="theme-change">
+            <div class="theme-types">
+              <label>1</label>
+              <label>2</label>
+              <label>3</label>
+            </div>
+            <div class="change-theme">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <circle class="theme-oval" cx="8" cy="8" r="8" fill="#D03F2F"/>
+              </svg> -->
+              <img class="theme-oval" src="./images/Oval.png" alt="icon" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="display-result">
+        <input class="result" type="text" placeholder="0" disabled/>
+      </div>
+      <div class="container">
+        <div class="first-quarter">
+          <button class="digit btn">7</button>
+          <button class="digit btn">8</button>
+          <button class="digit btn">9</button>
+          <button class="btn delete">DEL</button>
+        </div>
+        <div class="second-quarter">
+          <button class="digit btn">4</button>
+          <button class="digit btn">5</button>
+          <button class="digit btn">6</button>
+          <button class="digit btn operator">+</button>
+        </div>
+        <div class="third-quarter">
+          <button class="digit btn">1</button>
+          <button class="digit btn">2</button>
+          <button class="digit btn">3</button>
+          <button class="digit btn operator">-</button>
+        </div>
+        <div class="fourth-quarter">
+          <button class="digit btn">.</button>
+          <button class="digit btn">0</button>
+          <button class="digit btn operator">/</button>
+          <button class="digit btn operator">x</button>
+        </div>
+        <div class="bottom-buttons">
+          <button class="reset">RESET</button>
+          <button class="equal">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
